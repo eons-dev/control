@@ -3,4 +3,4 @@ next:
 	- daily
 	build: github_teams_add_repos
 	config:
-    team: devs
+		team: devs
