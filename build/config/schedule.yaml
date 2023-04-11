@@ -1,0 +1,6 @@
+next:
+- run_when_any:
+	- daily
+	build: github_teams_add_repos
+	config:
+    team: devs
