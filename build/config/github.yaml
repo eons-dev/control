@@ -11,7 +11,7 @@ next:
 - run_when_any:
 	- schedule
 	build: proxy
-	build_in: "./"
+	build_in: "schedule"
 	config:
 		clear_build_path: false
 		proxy: "../../config/schedule.yaml"
