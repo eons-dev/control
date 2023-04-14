@@ -23,6 +23,8 @@ jobs:
       env:
         repo_username: ${{ secrets.INFRASTRUCTURE_USERNAME }}
         repo_password: ${{ secrets.INFRASTRUCTURE_PASSWORD }}
+        pat: ${{ secrets.PAT }}
+        org: ${{ variables.ORG }}
       run: |
         cd build
         ebbs -vvv -e "github" -e "schedule" -e "daily"
