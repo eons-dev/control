@@ -24,7 +24,7 @@ jobs:
         repo_username: ${{ secrets.INFRASTRUCTURE_USERNAME }}
         repo_password: ${{ secrets.INFRASTRUCTURE_PASSWORD }}
         pat: ${{ secrets.PAT }}
-        org: ${{ variables.ORG }}
+        org: ${{ vars.ORG }}
       run: |
         cd build
         ebbs -vvv -e "github" -e "schedule" -e "daily"
